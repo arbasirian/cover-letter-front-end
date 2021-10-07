@@ -7,6 +7,7 @@ import { Box, Input, Submit } from 'components';
 const validationSchema = yup.object().shape({
   company: yup.string().required('No Company Name provided'),
   job_title: yup.string().required('No Job Title provided'),
+  manager: yup.string().required('No Job Title provided'),
 });
 
 export default ({ onSubmit, submitting }: any): JSX.Element => {
@@ -15,6 +16,7 @@ export default ({ onSubmit, submitting }: any): JSX.Element => {
       initialValues={{
         company: '',
         job_title: '',
+        manager: 'Hiring Manager',
       }}
       validateOnMount
       onSubmit={onSubmit}
@@ -39,6 +41,15 @@ export default ({ onSubmit, submitting }: any): JSX.Element => {
                 name="job_title"
                 type="text"
                 placeholder="Enter Job Title"
+              />
+            </Box>
+            <Box width="100%" marginBottom="45px">
+              <Input
+                formik={formik}
+                label="Manager"
+                name="manager"
+                type="text"
+                placeholder="Enter Manager"
               />
             </Box>
             <Submit
