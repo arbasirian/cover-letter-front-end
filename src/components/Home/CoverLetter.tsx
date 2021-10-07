@@ -2,26 +2,36 @@ import React from 'react';
 
 import { Box, Text } from 'components';
 import moment from 'moment';
+import { CoverLetterData } from 'types';
 
-const CoverLetter = () => {
+type Props = {
+  data: CoverLetterData;
+};
+const CoverLetter = ({ data }: Props) => {
   return (
     <>
+      <Box width="100%" align="right">
+        <Text>Armin Basirian</Text>
+      </Box>
+      <Box width="100%" align="right">
+        <Text>Pirozi, Tehran, Tehran, Iran</Text>
+      </Box>
+      <Box width="100%" align="right">
+        <Text>ar.basirain@gmail.com</Text>
+      </Box>
+      <Box width="100%" align="right">
+        <Text>+989355639293</Text>
+      </Box>
+      <Box></Box>
+      <Box></Box>
       <Box>
-        <Text display="block" align="right">
-          Armin Basirian
-        </Text>
-        <Text display="block" align="right">
-          Pirozi, Tehran, Tehran, Iran
-        </Text>
-        <Text display="block" align="right">
-          ar.basirain@gmail.com
-        </Text>
-        <Text display="block" align="right">
-          +989355639293
-        </Text>
+        <Text>{moment().format('ll')}</Text>
       </Box>
       <Box>
-        <Text>{moment().format()}</Text>
+        <Text>{data.company}</Text>
+      </Box>
+      <Box>
+        <Text>{moment().format('ll')}</Text>
       </Box>
 
       <Text></Text>

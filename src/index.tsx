@@ -6,19 +6,16 @@ import 'antd/dist/antd.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from 'styled-components';
-import { store } from 'redux/store';
 import themeVariables from 'theme/variables';
 
 import 'config/axios.config';
 import GlobalStyle from 'assets/styles/global.styles';
 
 ReactDOM.render(
-  <Provider store={store}>
-    <ThemeProvider theme={themeVariables('light', 'en')}>
-      <GlobalStyle />
-      <App />
-    </ThemeProvider>
-  </Provider>,
+  <ThemeProvider theme={themeVariables('light', 'en')}>
+    <GlobalStyle />
+    <App />
+  </ThemeProvider>,
   document.getElementById('root')
 );
 

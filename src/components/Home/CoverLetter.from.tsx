@@ -3,6 +3,7 @@ import { Formik, Form } from 'formik';
 import * as yup from 'yup';
 
 import { Box, Input, Submit } from 'components';
+import { CoverLetterData } from 'types';
 
 const validationSchema = yup.object().shape({
   company: yup.string().required('No Company Name provided'),
@@ -10,7 +11,10 @@ const validationSchema = yup.object().shape({
   manager: yup.string().required('No Job Title provided'),
 });
 
-export default ({ onSubmit, submitting }: any): JSX.Element => {
+type Props = {
+  onSubmit: (body: CoverLetterData) => void;
+};
+export default ({ onSubmit }: Props): JSX.Element => {
   return (
     <Formik
       initialValues={{
@@ -58,7 +62,7 @@ export default ({ onSubmit, submitting }: any): JSX.Element => {
               shape="fill"
               width="100%"
               formik={formik}
-              loading={submitting}
+              loading={false}
               label="Send"
             />
           </Box>
