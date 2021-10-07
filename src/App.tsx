@@ -13,7 +13,7 @@ import 'assets/styles/App.css';
 import { NotFoundPage } from 'pages';
 
 const App: FC = () => (
-  <Suspense fallback={() => console.log(`111`, 111)}>
+  <Suspense fallback={() => {}}>
     <Router>
       <Switch>
         {ROUTES.map((route) => (
