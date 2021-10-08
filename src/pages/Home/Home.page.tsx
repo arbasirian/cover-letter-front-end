@@ -21,7 +21,6 @@ export class HomePage extends PureComponent<RouteComponentProps, State> {
     const { showResult, formData } = this.state;
     return (
       <>
-        here: {process?.env?.REACT_APP_BASE_URL}
         {showResult ? (
           <Box maxwidth="70%" margin="0 auto" padding="30px 0">
             <CoverLetter data={formData} />
