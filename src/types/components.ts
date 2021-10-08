@@ -21,11 +21,11 @@ type WidthAttributes =
   | 'widthL'
   | 'widthT'
   | 'widthM'
-  | 'maxWidth'
-  | 'maxWidthD'
-  | 'maxWidthL'
-  | 'maxWidthT'
-  | 'maxWidthM';
+  | 'maxwidth'
+  | 'maxwidthD'
+  | 'maxwidthL'
+  | 'maxwidthT'
+  | 'maxwidthM';
 
 type HeightAttributes =
   | 'height'

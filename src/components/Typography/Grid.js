@@ -21,7 +21,7 @@ export const Grid = styled.div`
   /* WIDTH */
   width: ${(props) => (props.width ? props.width : '')};
   min-width: ${(props) => (props.minWidth ? props.minWidth : '')};
-  max-width: ${(props) => (props.maxWidth ? props.maxWidth : '')};
+  max-width: ${(props) => (props.maxwidth ? props.maxwidth : '')};
 
   /* OVERFLOW */
   overflow: ${(props) => (props.overflow ? props.overflow : '')};
@@ -105,7 +105,7 @@ export const Grid = styled.div`
     /* WIDTH */
     width: ${(props) => (props.widthD ? props.widthD : '')};
     min-width: ${(props) => (props.minWidthD ? props.minWidthD : '')};
-    max-width: ${(props) => (props.maxWidthD ? props.maxWidthD : '')};
+    max-width: ${(props) => (props.maxwidthD ? props.maxwidthD : '')};
 
     /* OVERFLOW */
     overflow: ${(props) => (props.overflowD ? props.overflowD : '')};
@@ -196,7 +196,7 @@ export const Grid = styled.div`
     /* WIDTH */
     width: ${(props) => (props.widthL ? props.widthL : '')};
     min-width: ${(props) => (props.minWidthL ? props.minWidthL : '')};
-    max-width: ${(props) => (props.maxWidthL ? props.maxWidthL : '')};
+    max-width: ${(props) => (props.maxwidthL ? props.maxwidthL : '')};
 
     /* OVERFLOW */
     overflow: ${(props) => (props.overflowL ? props.overflowL : '')};
@@ -286,7 +286,7 @@ export const Grid = styled.div`
     /* WIDTH */
     width: ${(props) => (props.widthT ? props.widthT : '')};
     min-width: ${(props) => (props.minWidthT ? props.minWidthT : '')};
-    max-width: ${(props) => (props.maxWidthT ? props.maxWidthT : '')};
+    max-width: ${(props) => (props.maxwidthT ? props.maxwidthT : '')};
 
     /* OVERFLOW */
     overflow: ${(props) => (props.overflowT ? props.overflowT : '')};
@@ -376,7 +376,7 @@ export const Grid = styled.div`
     /* WIDTH */
     width: ${(props) => (props.widthM ? props.widthM : '')};
     min-width: ${(props) => (props.minWidthM ? props.minWidthM : '')};
-    max-width: ${(props) => (props.maxWidthM ? props.maxWidthM : '')};
+    max-width: ${(props) => (props.maxwidthM ? props.maxwidthM : '')};
 
     /* OVERFLOW */
     overflow: ${(props) => (props.overflowM ? props.overflowM : '')};

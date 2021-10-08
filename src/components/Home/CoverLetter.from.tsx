@@ -28,7 +28,7 @@ export default ({ onSubmit }: Props): JSX.Element => {
     >
       {(formik) => {
         return (
-          <Box width="500px" maxWidth="100%" as={Form}>
+          <Box width="500px" maxwidth="100%" as={Form}>
             <Box width="100%" marginBottom="45px">
               <Input
                 formik={formik}

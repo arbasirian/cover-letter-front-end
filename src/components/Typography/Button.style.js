@@ -175,7 +175,7 @@ const Wrapper = styled.div`
   /* WIDTH */
   width: ${(props) => (props.width ? props.width : '')};
   min-width: ${(props) => (props.minWidth ? props.minWidth : '')};
-  max-width: ${(props) => (props.maxWidth ? props.maxWidth : '')};
+  max-width: ${(props) => (props.maxwidth ? props.maxwidth : '')};
 
   /* HEIGHT */
   height: ${(props) => (props.height ? props.height : '')};
@@ -225,7 +225,7 @@ const Wrapper = styled.div`
     /* WIDTH */
     width: ${(props) => (props.widthD ? props.widthD : '')};
     min-width: ${(props) => (props.minWidthD ? props.minWidthD : '')};
-    max-width: ${(props) => (props.maxWidthD ? props.maxWidthD : '')};
+    max-width: ${(props) => (props.maxwidthD ? props.maxwidthD : '')};
 
     /* HEIGHT */
     height: ${(props) => (props.heightD ? props.heightD : '')};
@@ -257,7 +257,7 @@ const Wrapper = styled.div`
     /* WIDTH */
     width: ${(props) => (props.widthL ? props.widthL : '')};
     min-width: ${(props) => (props.minWidthL ? props.minWidthL : '')};
-    max-width: ${(props) => (props.maxWidthL ? props.maxWidthL : '')};
+    max-width: ${(props) => (props.maxwidthL ? props.maxwidthL : '')};
 
     /* HEIGHT */
     height: ${(props) => (props.heightL ? props.heightL : '')};
@@ -289,7 +289,7 @@ const Wrapper = styled.div`
     /* WIDTH */
     width: ${(props) => (props.widthT ? props.widthT : '')};
     min-width: ${(props) => (props.minWidthT ? props.minWidthT : '')};
-    max-width: ${(props) => (props.maxWidthT ? props.maxWidthT : '')};
+    max-width: ${(props) => (props.maxwidthT ? props.maxwidthT : '')};
 
     /* HEIGHT */
     height: ${(props) => (props.heightT ? props.heightT : '')};
@@ -321,7 +321,7 @@ const Wrapper = styled.div`
     /* WIDTH */
     width: ${(props) => (props.widthM ? props.widthM : '')};
     min-width: ${(props) => (props.minWidthM ? props.minWidthM : '')};
-    max-width: ${(props) => (props.maxWidthM ? props.maxWidthM : '')};
+    max-width: ${(props) => (props.maxwidthM ? props.maxwidthM : '')};
 
     /* HEIGHT */
     height: ${(props) => (props.heightM ? props.heightM : '')};
