@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'antd';
+import { Button } from 'components';
 
 import StyleWrapper from './form.style';
 
@@ -19,7 +19,7 @@ export default (props: any): JSX.Element => {
   const { isSubmitting, isValid } = formik;
 
   return (
-    <StyleWrapper className='submit-button'>
+    <StyleWrapper className="submit-button">
       <Button
         className={className}
         htmlType={htmlType}

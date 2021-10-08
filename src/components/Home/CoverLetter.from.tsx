@@ -28,14 +28,13 @@ export default ({ onSubmit }: Props): JSX.Element => {
     >
       {(formik) => {
         return (
-          <Box width="100%" as={Form}>
+          <Box width="500px" maxWidth="100%" as={Form}>
             <Box width="100%" marginBottom="45px">
               <Input
                 formik={formik}
                 label="Company Name"
                 name="company"
                 type="text"
-                placeholder="Enter Company Name"
               />
             </Box>
             <Box width="100%" marginBottom="45px">
@@ -44,7 +43,6 @@ export default ({ onSubmit }: Props): JSX.Element => {
                 label="Job Title"
                 name="job_title"
                 type="text"
-                placeholder="Enter Job Title"
               />
             </Box>
             <Box width="100%" marginBottom="45px">
@@ -53,17 +51,13 @@ export default ({ onSubmit }: Props): JSX.Element => {
                 label="Manager"
                 name="manager"
                 type="text"
-                placeholder="Enter Manager"
               />
             </Box>
             <Submit
-              size="medium"
-              type="secondary"
-              shape="fill"
               width="100%"
               formik={formik}
               loading={false}
-              label="Send"
+              label="Generate"
             />
           </Box>
         );
