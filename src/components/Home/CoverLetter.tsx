@@ -83,7 +83,7 @@ const CoverLetter = ({ data }: Props) => {
       </Box>
       <br />
       <Box>
-        <Text>Armin Basirain</Text>
+        <Text>Armin Basirian</Text>
       </Box>
     </>
   );
